@@ -84,7 +84,7 @@ add_action( 'customize_preview_init', 'jessicastheme_customize_preview_js' );
 	);
 
 	foreach ($socials_array as $social) {
-		$wp_customize->add_settings("$social", array(
+		$wp_customize->add_setting("$social", array(
 				'type' => 'theme_mod',
 				'capability' => 'edit_theme_options'
 			)
@@ -180,7 +180,7 @@ add_action( 'customize_preview_init', 'jessicastheme_customize_preview_js' );
 		echo '</div>';
 	}
 
-	echo '</div>'
+	echo '</div>';
 
  }
 
