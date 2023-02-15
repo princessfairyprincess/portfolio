@@ -70,17 +70,19 @@
                             <?php if ($note_text) {
                                 ?>
                                 <div class="note">
-                                    <?php 
-                                    if ($arrow) {
+                                    <div class="note-inner">
+                                        <?php 
+                                        if ($arrow) {
+                                            ?>
+                                            <div class="arrow">
+                                                <img src="<?php echo $arrow; ?>">
+                                        </div>
+                                            <?php
+                                        }
                                         ?>
-                                        <div class="arrow">
-                                            <img src="<?php echo $arrow; ?>">
-                                    </div>
-                                        <?php
-                                    }
-                                    ?>
-                                    <div class="note-text">
-                                        <span>(<?php echo $note_text;?>)</span>
+                                        <div class="note-text">
+                                            <span>(<?php echo $note_text;?>)</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <?php

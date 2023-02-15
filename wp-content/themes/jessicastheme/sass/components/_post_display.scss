@@ -69,18 +69,29 @@
                         transform: rotate(-12deg);
                         transform-origin: top left;
                         bottom: 30px;
-                        .arrow {
-                            img {
-                                max-height: 100px;
+                        width: 200px;
+                        height: 300px;
+
+                        note-inner {
+                            position: fixed;
+                            width: 200px;
+                            height: 300px;
+                            .arrow {
+                                img {
+                                    max-height: 100px;
+                                }
+                            }
+                            .note-text {
+                                span {
+                                    @include caption;
+                                    color: $ink;
+                                    text-align: center;
+                                }
+                            
                             }
                         }
-                        .note-text {
-                            span {
-                                @include caption;
-                                color: $ink;
-                            }
+
                         
-                        }
                     }
                 }
 
@@ -88,26 +99,30 @@
                     width: 54px;
                     height: 54px;
                     background-color: $periwinkle;
+                    border-radius: 100%;
 
                     &::before {
                         opacity: 1;
                         content: ' ';
                         display: block;
                         width: 45px;
+                        height: 45px;
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center;
                     }
 
                     &.slick-next {
+                        right: -75px;
                         &::before {
-                            background-image: url('\wp-content\themes\jessicastheme\img\svg\carbon_chevron-right.svg');
+                            background-image: url('/wp-content/themes/jessicastheme/img/svg/carbon_chevron-right.svg');
                         }
                     }
 
-                    &.slick-next {
+                    &.slick-prev {
+                        left: -75px;
                         &::before {
-                            background-image: url('\wp-content\themes\jessicastheme\img\svg\carbon_chevron-left.svg');
+                            background-image: url('/wp-content/themes/jessicastheme/img/svg/carbon_chevron-left.svg');
                         }
                     }
                 }
