@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Jessica's Theme
 Theme URI: http://underscores.me/
@@ -38,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* line 11, sass/general/generic/_normalize.scss */
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -47,12 +49,14 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+/* line 23, sass/general/generic/_normalize.scss */
 body {
   margin: 0; }
 
 /**
  * Render the `main` element consistently in IE.
  */
+/* line 31, sass/general/generic/_normalize.scss */
 main {
   display: block; }
 
@@ -60,6 +64,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+/* line 40, sass/general/generic/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -70,6 +75,7 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+/* line 53, sass/general/generic/_normalize.scss */
 hr {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -80,6 +86,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+/* line 64, sass/general/generic/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   font-size: 1em; }
@@ -89,6 +96,7 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
+/* line 76, sass/general/generic/_normalize.scss */
 a {
   background-color: transparent; }
 
@@ -96,6 +104,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+/* line 85, sass/general/generic/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -105,6 +114,7 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+/* line 95, sass/general/generic/_normalize.scss */
 b,
 strong {
   font-weight: bolder; }
@@ -113,6 +123,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+/* line 105, sass/general/generic/_normalize.scss */
 code,
 kbd,
 samp {
@@ -122,6 +133,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+/* line 116, sass/general/generic/_normalize.scss */
 small {
   font-size: 80%; }
 
@@ -129,6 +141,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+/* line 125, sass/general/generic/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -136,9 +149,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+/* line 133, sass/general/generic/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
+/* line 137, sass/general/generic/_normalize.scss */
 sup {
   top: -0.5em; }
 
@@ -147,6 +162,7 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
+/* line 148, sass/general/generic/_normalize.scss */
 img {
   border-style: none; }
 
@@ -156,6 +172,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
+/* line 160, sass/general/generic/_normalize.scss */
 button,
 input,
 optgroup,
@@ -170,6 +187,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
+/* line 176, sass/general/generic/_normalize.scss */
 button,
 input {
   overflow: visible; }
@@ -178,6 +196,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
+/* line 186, sass/general/generic/_normalize.scss */
 button,
 select {
   text-transform: none; }
@@ -185,6 +204,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
+/* line 195, sass/general/generic/_normalize.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -194,6 +214,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
+/* line 206, sass/general/generic/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -204,6 +225,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
+/* line 218, sass/general/generic/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -213,6 +235,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
+/* line 229, sass/general/generic/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em; }
 
@@ -222,6 +245,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *		`fieldset` elements in all browsers.
  */
+/* line 240, sass/general/generic/_normalize.scss */
 legend {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -234,12 +258,14 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+/* line 253, sass/general/generic/_normalize.scss */
 progress {
   vertical-align: baseline; }
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
+/* line 261, sass/general/generic/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -247,6 +273,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
+/* line 270, sass/general/generic/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
@@ -256,6 +283,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
+/* line 280, sass/general/generic/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -264,6 +292,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+/* line 290, sass/general/generic/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px; }
@@ -271,6 +300,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
+/* line 299, sass/general/generic/_normalize.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
@@ -278,6 +308,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+/* line 308, sass/general/generic/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit; }
@@ -287,12 +318,14 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+/* line 320, sass/general/generic/_normalize.scss */
 details {
   display: block; }
 
 /*
  * Add the correct display in all browsers.
  */
+/* line 328, sass/general/generic/_normalize.scss */
 summary {
   display: list-item; }
 
@@ -301,12 +334,14 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
+/* line 339, sass/general/generic/_normalize.scss */
 template {
   display: none; }
 
 /**
  * Add the correct display in IE 10.
  */
+/* line 347, sass/general/generic/_normalize.scss */
 [hidden] {
   display: none; }
 
@@ -314,12 +349,14 @@ template {
 --------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* line 3, sass/general/generic/_box-sizing.scss */
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+/* line 9, sass/general/generic/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -329,6 +366,7 @@ html {
 --------------------------------------------------------------*/
 /* Typography
 --------------------------------------------- */
+/* line 1, sass/general/base/typography/_typography.scss */
 body,
 button,
 input,
@@ -340,6 +378,7 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
+/* line 1, sass/general/base/typography/_headings.scss */
 h1,
 h2,
 h3,
@@ -348,21 +387,26 @@ h5,
 h6 {
   clear: both; }
 
+/* line 1, sass/general/base/typography/_copy.scss */
 p {
   margin-bottom: 1.5em; }
 
+/* line 5, sass/general/base/typography/_copy.scss */
 dfn,
 cite,
 em,
 i {
   font-style: italic; }
 
+/* line 12, sass/general/base/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em; }
 
+/* line 16, sass/general/base/typography/_copy.scss */
 address {
   margin: 0 0 1.5em; }
 
+/* line 20, sass/general/base/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", courier, monospace;
@@ -372,89 +416,111 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
+/* line 30, sass/general/base/typography/_copy.scss */
 code,
 kbd,
 tt,
 var {
   font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
+/* line 37, sass/general/base/typography/_copy.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
+/* line 43, sass/general/base/typography/_copy.scss */
 mark,
 ins {
   background: #fff9c0;
   text-decoration: none; }
 
+/* line 49, sass/general/base/typography/_copy.scss */
 big {
   font-size: 125%; }
 
 /* Elements
 --------------------------------------------- */
+/* line 1, sass/general/base/elements/_body.scss */
 body {
   background: #fff; }
 
+/* line 1, sass/general/base/elements/_hr.scss */
 hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
 
+/* line 1, sass/general/base/elements/_lists.scss */
 ul,
 ol {
   margin: 0 0 1.5em 3em; }
 
+/* line 6, sass/general/base/elements/_lists.scss */
 ul {
   list-style: disc; }
 
+/* line 10, sass/general/base/elements/_lists.scss */
 ol {
   list-style: decimal; }
 
+/* line 14, sass/general/base/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em; }
 
+/* line 20, sass/general/base/elements/_lists.scss */
 dt {
   font-weight: 700; }
 
+/* line 24, sass/general/base/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em; }
 
 /* Make sure embeds and iframes fit their containers. */
+/* line 2, sass/general/base/elements/_media.scss */
 embed,
 iframe,
 object {
   max-width: 100%; }
 
+/* line 8, sass/general/base/elements/_media.scss */
 img {
   height: auto;
   max-width: 100%; }
 
+/* line 13, sass/general/base/elements/_media.scss */
 figure {
   margin: 1em 0; }
 
+/* line 1, sass/general/base/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%; }
 
 /* Links
 --------------------------------------------- */
+/* line 1, sass/general/base/elements/_links.scss */
 a {
   color: #4169e1; }
+  /* line 4, sass/general/base/elements/_links.scss */
   a:visited {
     color: #800080; }
+  /* line 8, sass/general/base/elements/_links.scss */
   a:hover, a:focus, a:active {
     color: #191970; }
+  /* line 14, sass/general/base/elements/_links.scss */
   a:focus {
     outline: thin dotted; }
+  /* line 18, sass/general/base/elements/_links.scss */
   a:hover, a:active {
     outline: 0; }
 
 /* Forms
 --------------------------------------------- */
+/* line 1, sass/general/base/elements/_buttons.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -466,11 +532,13 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em; }
+  /* line 13, sass/general/base/elements/_buttons.scss */
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa; }
+  /* line 17, sass/general/base/elements/_buttons.scss */
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -480,6 +548,7 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
+/* line 1, sass/general/base/elements/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -500,6 +569,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px; }
+  /* line 22, sass/general/base/elements/_fields.scss */
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -518,9 +588,11 @@ textarea {
   textarea:focus {
     color: #111; }
 
+/* line 27, sass/general/base/elements/_fields.scss */
 select {
   border: 1px solid #ccc; }
 
+/* line 31, sass/general/base/elements/_fields.scss */
 textarea {
   width: 100%; }
 
@@ -530,11 +602,13 @@ textarea {
 /* Jetpack infinite scroll
 --------------------------------------------- */
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+/* line 2, sass/general/plugins/jetpack/_infinite-scroll.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   display: none; }
 
 /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+/* line 8, sass/general/plugins/jetpack/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block; }
 
@@ -544,6 +618,7 @@ textarea {
 /* Accessibility
 --------------------------------------------- */
 /* Text meant only for screen readers. */
+/* line 2, sass/general/utilities/_accessibility.scss */
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -556,6 +631,7 @@ textarea {
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important; }
+  /* line 14, sass/general/utilities/_accessibility.scss */
   .screen-reader-text:focus {
     background-color: #f1f1f1;
     border-radius: 3px;
@@ -578,11 +654,13 @@ textarea {
     z-index: 100000; }
 
 /* Do not show the outline on the skip link target. */
+/* line 36, sass/general/utilities/_accessibility.scss */
 #primary[tabindex="-1"]:focus {
   outline: 0; }
 
 /* Alignments
 --------------------------------------------- */
+/* line 1, sass/general/utilities/_alignments.scss */
 .alignleft {
   /*rtl:ignore*/
   float: left;
@@ -590,6 +668,7 @@ textarea {
   margin-right: 1.5em;
   margin-bottom: 1.5em; }
 
+/* line 11, sass/general/utilities/_alignments.scss */
 .alignright {
   /*rtl:ignore*/
   float: right;
@@ -597,6 +676,7 @@ textarea {
   margin-left: 1.5em;
   margin-bottom: 1.5em; }
 
+/* line 21, sass/general/utilities/_alignments.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -615,40 +695,57 @@ textarea {
 /**
 * Typography
 */
+/* line 10, sass/globals/_includes.scss */
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  min-height: 100%; }
 
 /**
 *Layout
 */
+/* line 58, sass/globals/_includes.scss */
 .content-width {
   width: 100%;
-  padding: 0 24px; }
+  padding-left: 24px;
+  padding-right: 24px; }
 
+/* line 64, sass/globals/_includes.scss */
 .inner {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto; }
 
+/* line 70, sass/globals/_includes.scss */
 .no-scroll {
   overflow: hidden; }
 
+/* line 74, sass/globals/_includes.scss */
 .menu-padding {
   padding-top: calc(30px + 30px + 36px); }
 
+/* line 78, sass/globals/_includes.scss */
 #page {
   position: relative; }
 
+/* line 82, sass/globals/_includes.scss */
 .background-motif {
   position: absolute;
   z-index: -999;
   top: 50%; }
+  /* line 86, sass/globals/_includes.scss */
   .background-motif.left {
     left: -70px; }
+
+/* line 91, sass/globals/_includes.scss */
+section {
+  padding-bottom: 80px; }
 
 /**
 * Palette
 */
+/**
+* Gradients
+**/
 /**
 * Shadows
 */
@@ -689,6 +786,7 @@ html {
 /**
 * Header
 */
+/* line 5, sass/globals/_header.scss */
 #masthead {
   background-color: #FFFFFF20;
   -webkit-backdrop-filter: blur(10px);
@@ -704,17 +802,21 @@ html {
           animation-duration: 600;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1; }
+  /* line 15, sass/globals/_header.scss */
   #masthead.sticky {
     position: fixed;
     top: 0;
     z-index: 9999999; }
+  /* line 21, sass/globals/_header.scss */
   #masthead.opened {
     z-index: 9999999;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh; }
+    height: 100vh;
+    background-color: #FFFFFF50; }
+  /* line 31, sass/globals/_header.scss */
   #masthead .header-inner {
     padding: 30px 0;
     display: -webkit-box;
@@ -733,14 +835,17 @@ html {
     z-index: 99999999;
     position: relative;
     overflow: hidden; }
+    /* line 42, sass/globals/_header.scss */
     #masthead .header-inner .site-branding a {
       display: block;
       height: 100%;
       width: auto; }
+      /* line 47, sass/globals/_header.scss */
       #masthead .header-inner .site-branding a img {
         height: 100%;
         max-height: 36px;
         width: auto; }
+    /* line 55, sass/globals/_header.scss */
     #masthead .header-inner .navigation-outer .menu-toggler {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -749,17 +854,22 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      grid-gap: 10px; }
+      grid-gap: 10px;
+      cursor: pointer; }
+      /* line 63, sass/globals/_header.scss */
       #masthead .header-inner .navigation-outer .menu-toggler.animate .anim:first-of-type {
         -webkit-transform: rotate(45deg) translate(4px, 19px);
                 transform: rotate(45deg) translate(4px, 19px); }
+      /* line 66, sass/globals/_header.scss */
       #masthead .header-inner .navigation-outer .menu-toggler.animate .anim:last-of-type {
         -webkit-transform: rotate(-45deg) translate(3px, -19px);
                 transform: rotate(-45deg) translate(3px, -19px); }
+      /* line 70, sass/globals/_header.scss */
       #masthead .header-inner .navigation-outer .menu-toggler.animate .move {
         -webkit-transform: translateX(50px);
                 transform: translateX(50px);
         opacity: 0; }
+      /* line 76, sass/globals/_header.scss */
       #masthead .header-inner .navigation-outer .menu-toggler div {
         -webkit-transition: all ease 0.5s;
         transition: all ease 0.5s;
@@ -770,10 +880,12 @@ html {
         display: block;
         background-color: #474A66;
         border-radius: 100px; }
+  /* line 92, sass/globals/_header.scss */
   #masthead .menu-outer {
     display: none;
     height: 0;
     opacity: 0; }
+    /* line 98, sass/globals/_header.scss */
     #masthead .menu-outer.active {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -790,6 +902,7 @@ html {
           -ms-flex-align: center;
               align-items: center;
       opacity: 1; }
+    /* line 106, sass/globals/_header.scss */
     #masthead .menu-outer .menu-inner {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -804,11 +917,9 @@ html {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      background-color: #FFFFFF60;
-      -webkit-backdrop-filter: blur(10px);
-              backdrop-filter: blur(10px);
       width: 100%;
       height: 100%; }
+      /* line 115, sass/globals/_header.scss */
       #masthead .menu-outer .menu-inner #site-navigation .menu-main-container #primary-menu {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -827,6 +938,7 @@ html {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
+        /* line 125, sass/globals/_header.scss */
         #masthead .menu-outer .menu-inner #site-navigation .menu-main-container #primary-menu .menu-item a {
           font-family: "Roboto Mono", monospace;
           font-size: 1.65rem;
@@ -835,6 +947,7 @@ html {
           text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           text-align: center;
           color: black; }
+    /* line 138, sass/globals/_header.scss */
     #masthead .menu-outer .socials-outer {
       width: 100%;
       display: -webkit-box;
@@ -844,22 +957,44 @@ html {
           -ms-flex-pack: end;
               justify-content: end;
       padding: 0 0 50px; }
+      /* line 144, sass/globals/_header.scss */
       #masthead .menu-outer .socials-outer .socials-inner {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         grid-gap: 40px; }
+        /* line 148, sass/globals/_header.scss */
         #masthead .menu-outer .socials-outer .socials-inner a svg {
           text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+/**
+* Footer
+*/
+/* line 5, sass/globals/_footer.scss */
+footer {
+  background-color: #779DD8; }
+  /* line 7, sass/globals/_footer.scss */
+  footer .site-info {
+    padding: 90px 0; }
+    /* line 9, sass/globals/_footer.scss */
+    footer .site-info .footer-inner {
+      text-align: center; }
+      /* line 11, sass/globals/_footer.scss */
+      footer .site-info .footer-inner p, footer .site-info .footer-inner a {
+        font-size: 1.25rem;
+        color: white;
+        font-family: "Roboto Mono", monospace;
+        line-height: 2.5; }
 
 /* Components
 ------------------------------------------------- */
 /**
 * Hero 
 */
+/* line 5, sass/components/_hero.scss */
 .hero {
-  position: relative;
-  padding: 0 0 40px; }
+  position: relative; }
+  /* line 7, sass/components/_hero.scss */
   .hero .hero-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -878,11 +1013,13 @@ html {
     z-index: 1;
     position: relative;
     margin: 40px auto 80px; }
+    /* line 17, sass/components/_hero.scss */
     .hero .hero-inner .title h1 {
       font-family: "Poppins", sans-serif;
       font-size: 3.2rem;
       font-weight: 600;
       color: #474A66; }
+    /* line 22, sass/components/_hero.scss */
     .hero .hero-inner .motifs {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -894,6 +1031,7 @@ html {
           justify-content: space-around;
       position: absolute;
       z-index: -1; }
+      /* line 31, sass/components/_hero.scss */
       .hero .hero-inner .motifs .motif-left {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -910,6 +1048,7 @@ html {
                 align-items: flex-start;
         position: relative;
         margin-bottom: -33px; }
+        /* line 39, sass/components/_hero.scss */
         .hero .hero-inner .motifs .motif-left .bubble-small {
           border-radius: 100%;
           background-color: #D485B942;
@@ -918,12 +1057,14 @@ html {
           display: block;
           margin-bottom: -23px;
           z-index: 1; }
+        /* line 49, sass/components/_hero.scss */
         .hero .hero-inner .motifs .motif-left .bubble-large {
           border-radius: 100%;
           display: block;
           background-color: #8DDBE0;
           width: 195px;
           height: 195px; }
+      /* line 57, sass/components/_hero.scss */
       .hero .hero-inner .motifs .motif-right {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -935,6 +1076,7 @@ html {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end; }
+        /* line 61, sass/components/_hero.scss */
         .hero .hero-inner .motifs .motif-right .bubble-photo {
           border-radius: 100%;
           display: block;
@@ -943,18 +1085,21 @@ html {
           background-size: cover;
           width: 242px;
           height: 242px; }
+    /* line 73, sass/components/_hero.scss */
     .hero .hero-inner .text {
       z-index: 1;
       background-color: #DEE8F5;
       padding: 0 28px;
       min-width: 30%;
       text-align: center; }
+      /* line 80, sass/components/_hero.scss */
       .hero .hero-inner .text .text-inner h2 {
         font-family: "Roboto Mono", monospace;
         font-size: 1.65rem;
         font-weight: 400;
         text-decoration: none;
         color: black; }
+  /* line 87, sass/components/_hero.scss */
   .hero .arrow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -969,6 +1114,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    /* line 92, sass/components/_hero.scss */
     .hero .arrow .bounce {
       -webkit-animation-name: bounce;
               animation-name: bounce;
@@ -980,5 +1126,102 @@ html {
               animation-iteration-count: infinite;
       -webkit-animation-direction: alternate;
               animation-direction: alternate; }
+
+/**
+* Post Display
+*/
+/* line 8, sass/components/_post_display.scss */
+.post-display .section-heading h2.regular {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-align: left;
+  color: #474A66; }
+  /* line 12, sass/components/_post_display.scss */
+  .post-display .section-heading h2.regular:nth-of-type(even) {
+    text-align: right; }
+  /* line 15, sass/components/_post_display.scss */
+  .post-display .section-heading h2.regular span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2.125rem; }
+    /* line 17, sass/components/_post_display.scss */
+    .post-display .section-heading h2.regular span.pink {
+      color: #D485B9; }
+/* line 29, sass/components/_post_display.scss */
+.post-display .slider {
+  padding: 64px 0 120px;
+  margin: 0 auto;
+  width: 63%;
+  max-width: 914px; }
+  /* line 34, sass/components/_post_display.scss */
+  .post-display .slider .slider-inner {
+    background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF00), color-stop(12.51%, #FFFFFF00), color-stop(12.73%, #D485B942), to(#D485B942));
+    background-image: linear-gradient(90deg, #FFFFFF00 0%, #FFFFFF00 12.51%, #D485B942 12.73%, #D485B942 100%);
+    padding: 64px 64px 24px; }
+    /* line 39, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slide .slide-inner {
+      min-height: 500px;
+      display: block;
+      width: 100%;
+      position: relative; }
+      /* line 44, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slide .slide-inner a {
+        display: block; }
+        /* line 46, sass/components/_post_display.scss */
+        .post-display .slider .slider-inner .slider-contents .slide .slide-inner a .image {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          -webkit-transition: all ease 0.5s;
+          transition: all ease 0.5s;
+          min-height: 500px;
+          -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+                  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08); }
+        /* line 59, sass/components/_post_display.scss */
+        .post-display .slider .slider-inner .slider-contents .slide .slide-inner a:hover .image {
+          background-size: 120%;
+          background-color: #FFFFFF20; }
+    /* line 66, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slide .note {
+      position: absolute;
+      right: -12px;
+      -webkit-transform: rotate(-12deg);
+              transform: rotate(-12deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      bottom: 30px; }
+      /* line 73, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slide .note .arrow img {
+        max-height: 100px; }
+      /* line 78, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slide .note .note-text span {
+        font-family: "Roboto Mono", monospace;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #474A66; }
+    /* line 87, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slick-arrow {
+      width: 54px;
+      height: 54px;
+      background-color: #779DD8; }
+      /* line 92, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slick-arrow::before {
+        opacity: 1;
+        content: ' ';
+        display: block;
+        width: 45px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; }
+      /* line 103, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-next::before {
+        background-image: url("wp-contentthemesjessicasthemeimgsvgÊrbon_chevron-right.svg"); }
+      /* line 109, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-next::before {
+        background-image: url("wp-contentthemesjessicasthemeimgsvgÊrbon_chevron-left.svg"); }
 
 /*# sourceMappingURL=style.css.map */

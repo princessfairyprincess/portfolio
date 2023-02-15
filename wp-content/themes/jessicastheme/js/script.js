@@ -54,12 +54,35 @@ $(document).ready(function(){
         }
     });
 
+    /**
+     * Init vendor scripts
+     */
+
+    //Animate on Scroll
+
     AOS.init();
+
+    //TypeIt
+    
     new TypeIt('.type-this', {
         waitUntilVisible: true,
         lifeLike: true,
         startDelay: 200
     }).go();
+
+    //Slick.js
+
+    let slider = $('.slick');
+
+    $(slider).slick({
+        lazyLoad: 'ondemand',
+        fade: true,
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 7000,
+    });
+
 
 
 });

@@ -45,7 +45,7 @@ function jm_register_posts() {
 	$post_rules = array(
 		'public'      => true,
 		'has_archive' => false,
-		'publicly_queryable' => false,
+		'publicly_queryable' => true,
 		'show_in_rest' => true,
 		'supports' => array(
 			'title', 
@@ -60,7 +60,7 @@ function jm_register_posts() {
 		
 	//Portfolio pieces
 		
-	register_post_type('jm_portfolio_piece',
+	register_post_type('portfolio',
 	array(
 		'labels'      => array(
 			'name'          => _x('Portfolio', 'textdomain'),
@@ -72,7 +72,7 @@ function jm_register_posts() {
 		),
 		'public'      => true,
 		'has_archive' => false,
-		'publicly_queryable' => false,
+		'publicly_queryable' => true,
 		'show_in_rest' => true,
 		'menu_icon' => 'dashicons-portfolio',
 		'supports' => array(
@@ -91,7 +91,7 @@ function jm_register_posts() {
 		
 	//Skills
 		
-	register_post_type('jm_skills',
+	register_post_type('skills',
 	array(
 			'labels'      => array(
 				'name'          => _x('Skills', 'textdomain'),
@@ -99,7 +99,7 @@ function jm_register_posts() {
 			),
 			'public'      => true,
 			'has_archive' => false,
-			'publicly_queryable' => false,
+			'publicly_queryable' => true,
 			'show_in_rest' => true,
 			'menu_icon' => 'dashicons-superhero-alt',
 			'supports' => array(

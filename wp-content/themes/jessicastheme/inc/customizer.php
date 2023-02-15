@@ -227,13 +227,13 @@ add_action( 'customize_preview_init', 'jessicastheme_customize_preview_js' );
   add_action('customize_register', 'jm_footer_settings');
   
   function jm_output_footer() {
-	echo '<div class="footer-inner">';
+	echo '<div class="footer-inner inner">';
 	if (strlen(get_theme_mod("footer_text_1")) > 0) {
-		echo get_theme_mod("footer_text_1");
+		echo '<p>'.get_theme_mod("footer_text_1") . '</p>';
 	}
 	if (strlen(get_theme_mod("footer_text_2")) > 0) {
-		echo get_theme_mod("footer_text_2");
+		echo '<p>'.get_theme_mod("footer_text_2").'<br>';
 	}
-	echo "<div class='copyright'>© Jessica Michaels " . date('Y') . '</div>';
-	echo "</div>";
+	echo "<div class='copyright'><p>© Jessica Michaels " . date('Y') . '</div>';
+	echo "</p></div>";
   }

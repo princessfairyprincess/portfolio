@@ -1,0 +1,121 @@
+/**
+* Post Display
+*/
+
+.post-display {
+    .section-heading {
+        h2 {
+            &.regular {
+                @include sectHeadRoboto;
+                text-align: left;
+                color: $ink;
+                &:nth-of-type(even) {
+                    text-align: right;
+                }
+                span {
+                    @include spanPoppins;
+                    &.pink {
+                        color: $pink;
+                    }
+                }
+            }
+
+            &.bolder {
+
+            }
+        }
+    }
+
+    .slider {
+        padding: 64px 0 120px;
+        margin: 0 auto;
+        width: 63%;
+        max-width: 914px;
+        .slider-inner {
+            background-image: $postDisplayPink;
+            padding: 64px 64px 24px;
+            .slider-contents {
+                .slide {
+                    .slide-inner {
+                        min-height: 500px;
+                        display: block;
+                        width: 100%;
+                        position: relative;
+                        a {
+                            display: block;
+                            .image {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                background-size: cover;
+                                background-position: top;
+                                background-repeat: no-repeat;
+                                transition: $ease;
+                                min-height: 500px;
+                                box-shadow: $shadow;
+                            }
+
+                            &:hover {
+                                .image {
+                                    background-size: 120%;
+                                    background-color: $glass;
+                                }
+                            }
+                        }
+                    }
+                    .note {
+                        position: absolute;
+                        right: -12px;
+                        transform: rotate(-12deg);
+                        transform-origin: top left;
+                        bottom: 30px;
+                        .arrow {
+                            img {
+                                max-height: 100px;
+                            }
+                        }
+                        .note-text {
+                            span {
+                                @include caption;
+                                color: $ink;
+                            }
+                        
+                        }
+                    }
+                }
+
+                .slick-arrow {
+                    width: 54px;
+                    height: 54px;
+                    background-color: $periwinkle;
+
+                    &::before {
+                        opacity: 1;
+                        content: ' ';
+                        display: block;
+                        width: 45px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    &.slick-next {
+                        &::before {
+                            background-image: url('\wp-content\themes\jessicastheme\img\svg\carbon_chevron-right.svg');
+                        }
+                    }
+
+                    &.slick-next {
+                        &::before {
+                            background-image: url('\wp-content\themes\jessicastheme\img\svg\carbon_chevron-left.svg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .row {
+
+    }
+}

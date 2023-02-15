@@ -125,12 +125,15 @@ add_action( 'widgets_init', 'jessicastheme_widgets_init' );
  */
 function jessicastheme_scripts() {
 	wp_enqueue_style( 'aos-css', get_template_directory_uri() . '/vendor/aos-master/dist/aos.css', array(), _S_VERSION, false );
+	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/vendor/slick/slick.css', array(), _S_VERSION, false );
+	wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/vendor/slick/slick-theme.css', array(), _S_VERSION, false );
 
-	wp_enqueue_style( 'jessicastheme-style', get_stylesheet_uri(), array(), _S_VERSION, false );
+	wp_enqueue_style( 'jessicastheme-style', get_stylesheet_uri(), array(), false, false );
 	wp_style_add_data( 'jessicastheme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'aos-script', get_template_directory_uri() . '/vendor/aos-master/dist/aos.js', array(), false, false );
 	wp_enqueue_script( 'typeit-script', 'https://unpkg.com/typeit@8.7.1/dist/index.umd.js', array(), false, false );
+	wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/vendor/slick/slick.js', array('jquery'), true, false );
 	wp_enqueue_script( 'jessicastheme-script', get_template_directory_uri() . '/js/script.js', array('jquery'), false, false );
 
 
