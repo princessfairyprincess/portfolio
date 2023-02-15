@@ -184,3 +184,56 @@ add_action( 'customize_preview_init', 'jessicastheme_customize_preview_js' );
 
  }
 
+ /**
+  * Footer settings
+  */
+
+  function jm_footer_settings($wp_customize) {
+	$wp_customize -> add_section('footer_settings', array(
+			'title' => _x('Footer Settings', 'text-domain'),
+			'priority' => 40,
+		)
+	);
+
+	$wp_customize->add_setting("footer_text_1", array(
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options'
+		)
+	);
+
+	$wp_customize->add_control("footer_text_1", array(
+			'label' => _x("Footer Text 1", 'text-domain'),
+			'section' => 'footer_settings',
+			'type' => 'textarea',
+			'priority' => "5"
+		)
+	);
+
+	$wp_customize->add_setting("footer_text_2", array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options'
+	)
+	);
+
+	$wp_customize->add_control("footer_text_2", array(
+			'label' => _x("Footer Text 2", 'text-domain'),
+			'section' => 'footer_settings',
+			'type' => 'textarea',
+			'priority' => "10"
+		)
+	);
+  }
+
+  add_action('customize_register', 'jm_footer_settings');
+  
+  function jm_output_footer() {
+	echo '<div class="footer-inner">';
+	if (strlen(get_theme_mod("footer_text_1")) > 0) {
+		echo get_theme_mod("footer_text_1");
+	}
+	if (strlen(get_theme_mod("footer_text_2")) > 0) {
+		echo get_theme_mod("footer_text_2");
+	}
+	echo "<div class='copyright'>© Jessica Michaels " . date('Y') . '</div>';
+	echo "</div>";
+  }

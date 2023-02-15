@@ -1,0 +1,120 @@
+/**
+* Includes
+*/
+
+
+/**
+* Typography
+*/
+
+html {
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+$roboto: 'Roboto Mono', monospace;
+$poppins: 'Poppins', sans-serif;
+
+@mixin headerRoboto{
+    font-family: $roboto;
+    font-size: 1.65rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@mixin headerPoppins {
+    font-family: $poppins;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+
+/**
+*Layout
+*/
+
+.content-width {
+    width: 100%;
+    padding: 0 24px;
+}
+
+.inner {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.menu-padding {
+    padding-top: calc(30px + 30px + 36px);
+}
+
+#page {
+    position: relative;
+}
+
+.background-motif {
+    position: absolute;
+    z-index: -999;
+    top: 50%;
+    &.left {
+        left: -70px;
+    }
+}
+
+$mobile: '';
+
+/**
+* Palette
+*/
+
+$ink: #474A66;
+$periwinkle: #779DD8;
+$mist: #DEE8F5;
+$paleBlue: #C1D8ED;
+$aqua: #8DDBE0;
+$pink: #D485B9;
+$pinkTrans: #D485B942;
+$olive: #69A1AC;
+$paleAqua: #D4FCFF;
+
+/**
+* Shadows
+*/
+
+$shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+$smallShadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+/**
+* Transitions
+*/
+
+$ease: all ease 0.5s;
+$fade: opacity ease 0.5s;
+
+/**
+* Animations
+*/
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

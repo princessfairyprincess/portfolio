@@ -13,9 +13,6 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 
 /**
-
-
-/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/theme-setup.php';
