@@ -63,9 +63,11 @@
 
                         <div class="slide">
                             <div class="slide-inner">
-                                <a hreF="<?php echo $link; ?>" target="_blank">
-                                    <div class="image" style="background-image:url('<?php echo $img;?>')"></div>
-                                </a>
+                                <div class="link-outer">
+                                    <a hreF="<?php echo $link; ?>" target="_blank">
+                                        <div class="image" style="background-image:url('<?php echo $img;?>')"></div>
+                                    </a>
+                                </div>
                             </div>
                             <?php if ($note_text) {
                                 ?>

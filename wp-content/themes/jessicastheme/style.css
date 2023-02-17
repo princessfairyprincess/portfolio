@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: Jessica's Theme
 Theme URI: http://underscores.me/
@@ -1150,94 +1149,132 @@ footer {
       color: #D485B9; }
 /* line 29, sass/components/_post_display.scss */
 .post-display .slider {
-  padding: 64px 0 120px;
+  padding: 64px 0 0x;
   margin: 0 auto;
-  width: 63%;
-  max-width: 914px; }
-  /* line 34, sass/components/_post_display.scss */
-  .post-display .slider .slider-inner {
-    background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF00), color-stop(12.51%, #FFFFFF00), color-stop(12.73%, #D485B942), to(#D485B942));
-    background-image: linear-gradient(90deg, #FFFFFF00 0%, #FFFFFF00 12.51%, #D485B942 12.73%, #D485B942 100%);
-    padding: 64px 64px 24px; }
-    /* line 39, sass/components/_post_display.scss */
+  width: 80%;
+  max-width: 1100px; }
+  /* line 36, sass/components/_post_display.scss */
+  .post-display .slider .slider-inner .slider-contents .slide {
+    padding: 0 95px 95px; }
+    /* line 38, sass/components/_post_display.scss */
     .post-display .slider .slider-inner .slider-contents .slide .slide-inner {
       min-height: 500px;
       display: block;
       width: 100%;
       position: relative; }
-      /* line 44, sass/components/_post_display.scss */
-      .post-display .slider .slider-inner .slider-contents .slide .slide-inner a {
-        display: block; }
+      /* line 43, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slide .slide-inner .link-outer {
+        padding: 60px 60px 24px;
+        background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF00), color-stop(12.51%, #FFFFFF00), color-stop(12.73%, #D485B942), to(#D485B942));
+        background-image: linear-gradient(90deg, #FFFFFF00 0%, #FFFFFF00 12.51%, #D485B942 12.73%, #D485B942 100%); }
         /* line 46, sass/components/_post_display.scss */
-        .post-display .slider .slider-inner .slider-contents .slide .slide-inner a .image {
-          width: 100%;
-          height: 100%;
+        .post-display .slider .slider-inner .slider-contents .slide .slide-inner .link-outer a {
           display: block;
-          background-size: cover;
-          background-position: top;
-          background-repeat: no-repeat;
-          -webkit-transition: all ease 0.5s;
-          transition: all ease 0.5s;
-          min-height: 500px;
-          -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
-                  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08); }
-        /* line 59, sass/components/_post_display.scss */
-        .post-display .slider .slider-inner .slider-contents .slide .slide-inner a:hover .image {
-          background-size: 120%;
-          background-color: #FFFFFF20; }
-    /* line 66, sass/components/_post_display.scss */
+          -webkit-transition: ease;
+          transition: ease; }
+          /* line 49, sass/components/_post_display.scss */
+          .post-display .slider .slider-inner .slider-contents .slide .slide-inner .link-outer a .image {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            -webkit-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+            min-height: 440px;
+            -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+                    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08); }
+            /* line 59, sass/components/_post_display.scss */
+            .post-display .slider .slider-inner .slider-contents .slide .slide-inner .link-outer a .image:before {
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              display: block;
+              position: absolute;
+              content: "";
+              background-color: #FFFFFF20;
+              -webkit-transition: all ease 0.5s;
+              transition: all ease 0.5s; }
+          /* line 72, sass/components/_post_display.scss */
+          .post-display .slider .slider-inner .slider-contents .slide .slide-inner .link-outer a:hover .image {
+            -webkit-transform: scale(1.025);
+                    transform: scale(1.025); }
+            /* line 74, sass/components/_post_display.scss */
+            .post-display .slider .slider-inner .slider-contents .slide .slide-inner .link-outer a:hover .image:before {
+              opacity: 1; }
+    /* line 83, sass/components/_post_display.scss */
     .post-display .slider .slider-inner .slider-contents .slide .note {
       position: absolute;
-      right: -12px;
+      right: 75px;
       -webkit-transform: rotate(-12deg);
               transform: rotate(-12deg);
       -webkit-transform-origin: top left;
               transform-origin: top left;
-      bottom: 30px;
-      width: 200px;
-      height: 300px; }
-      /* line 75, sass/components/_post_display.scss */
-      .post-display .slider .slider-inner .slider-contents .slide .note note-inner {
+      bottom: -25px;
+      width: 120px;
+      height: 170px; }
+      /* line 92, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slide .note .note-inner {
         position: fixed;
-        width: 200px;
-        height: 300px; }
-        /* line 80, sass/components/_post_display.scss */
-        .post-display .slider .slider-inner .slider-contents .slide .note note-inner .arrow img {
-          max-height: 100px; }
-        /* line 85, sass/components/_post_display.scss */
-        .post-display .slider .slider-inner .slider-contents .slide .note note-inner .note-text span {
-          font-family: "Roboto Mono", monospace;
-          font-size: 1rem;
-          font-weight: 400;
-          color: #474A66;
+        width: 120px;
+        height: 170px; }
+        /* line 96, sass/components/_post_display.scss */
+        .post-display .slider .slider-inner .slider-contents .slide .note .note-inner .arrow {
+          max-height: 80px; }
+          /* line 98, sass/components/_post_display.scss */
+          .post-display .slider .slider-inner .slider-contents .slide .note .note-inner .arrow img {
+            max-height: 80px; }
+        /* line 102, sass/components/_post_display.scss */
+        .post-display .slider .slider-inner .slider-contents .slide .note .note-inner .note-text {
           text-align: center; }
-    /* line 98, sass/components/_post_display.scss */
-    .post-display .slider .slider-inner .slider-contents .slick-arrow {
-      width: 54px;
-      height: 54px;
-      background-color: #779DD8;
-      border-radius: 100%; }
-      /* line 104, sass/components/_post_display.scss */
-      .post-display .slider .slider-inner .slider-contents .slick-arrow::before {
-        opacity: 1;
-        content: ' ';
-        display: block;
-        width: 45px;
-        height: 45px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center; }
-      /* line 115, sass/components/_post_display.scss */
-      .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-next {
-        right: -75px; }
-        /* line 117, sass/components/_post_display.scss */
-        .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-next::before {
-          background-image: url("wp-contentthemesjessicasthemeimgsvgÊrbon_chevron-right.svg"); }
-      /* line 122, sass/components/_post_display.scss */
-      .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-prev {
-        left: -75px; }
-        /* line 124, sass/components/_post_display.scss */
-        .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-prev::before {
-          background-image: url("wp-contentthemesjessicasthemeimgsvgÊrbon_chevron-left.svg"); }
+          /* line 104, sass/components/_post_display.scss */
+          .post-display .slider .slider-inner .slider-contents .slide .note .note-inner .note-text span {
+            font-family: "Roboto Mono", monospace;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #474A66;
+            text-align: center; }
+  /* line 117, sass/components/_post_display.scss */
+  .post-display .slider .slider-inner .slider-contents .slick-arrow {
+    width: 54px;
+    height: 54px;
+    background-color: #779DD8;
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2; }
+    /* line 130, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slick-arrow:hover {
+      background-color: #D4FCFF; }
+    /* line 134, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slick-arrow::before {
+      opacity: 1;
+      content: ' ';
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: auto; }
+    /* line 146, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-next {
+      right: 70px; }
+      /* line 148, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-next::before {
+        background-image: url("/wp-content/themes/jessicastheme/img/svg/carbon_chevron-right.svg"); }
+    /* line 153, sass/components/_post_display.scss */
+    .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-prev {
+      left: 70px; }
+      /* line 155, sass/components/_post_display.scss */
+      .post-display .slider .slider-inner .slider-contents .slick-arrow.slick-prev::before {
+        background-image: url("/wp-content/themes/jessicastheme/img/svg/carbon_chevron-left.svg"); }
 
 /*# sourceMappingURL=style.css.map */
