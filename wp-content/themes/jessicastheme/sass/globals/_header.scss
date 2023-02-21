@@ -1,0 +1,155 @@
+/**
+* Header
+*/
+
+#masthead {
+    background-color: $glass;
+    backdrop-filter: blur(10px);
+    box-shadow: $shadow;
+    position: relative;
+    transition: $ease;
+    animation-name: smoothScroll;
+    animation-duration: 600;
+    animation-iteration-count: 1;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        z-index: 9999999;
+    }
+    
+    &.opened {
+        z-index: 9999999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #FFFFFF50;
+    }
+
+    .header-inner {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99999999;
+        position: relative;
+        overflow: hidden;
+
+        .site-branding {
+            a {
+                display: block;
+                height: 100%;
+                width: auto;
+
+                img {
+                    height: 100%;
+                    max-height: 36px;
+                    width: auto;
+                }
+            }
+        }
+        .navigation-outer {
+            .menu-toggler {
+                display: flex;
+                flex-direction: column;
+                grid-gap: 10px;
+                cursor: pointer;
+
+                &.animate {
+                    .anim {
+                        &:first-of-type {
+                            transform: rotate(45deg) translate(4px, 19px);
+                        }
+                        &:last-of-type {
+                            transform: rotate(-45deg) translate(3px, -19px);
+                        }
+                    }
+                    .move {
+                        transform: translateX(50px);
+                        opacity: 0;
+                    }
+                }
+
+                div {
+                    transition: $ease;
+                    transform-origin: center;
+                    width: 48px;
+                    height: 6px;
+                    display: block;
+                    background-color: $ink;
+                    border-radius: 100px;
+                }
+            }
+
+            
+        }
+        
+    }
+
+    .menu-outer {
+        display: none;
+        height: 0;
+        opacity: 0;
+        //transition: $fade;
+
+        &.active {
+            display: flex;
+            height: calc( 100vh - (30px + 30px + 36px));
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            opacity: 1;
+        }
+        .menu-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            #site-navigation {
+                .menu-main-container {
+                    #primary-menu {
+                        display: flex;
+                        flex-direction: column;
+                        grid-gap: 80px;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        align-items: center;
+                        justify-content: center;
+                        .menu-item {
+                            a {
+                                @include headerRoboto;
+                                text-shadow: $smallShadow;
+                                text-align: center;
+                                color: black;
+                            }
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
+        .socials-outer {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            padding: 0 0 50px;
+
+            .socials-inner {
+                display: flex;
+                grid-gap: 40px;
+                a {
+                    svg {
+                        text-shadow: $smallShadow;
+                    }
+                }
+            }
+        }
+    }
+}

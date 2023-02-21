@@ -1,0 +1,111 @@
+/**
+* Copy Section
+*/
+
+.copy-section {
+    .copy-title-outer {
+        .copy-title {
+            h2 {
+                @include sectHeadPoppins;
+            text-align: center;
+            color: $ink;
+            }
+        }
+    }
+
+    .text-container {
+        width: 60%;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+
+        p {
+            color: $ink;
+            @include copy;
+        }
+
+        span {
+
+        }
+    }
+
+    .table-container {
+        display: block;
+        margin: 80px auto;
+        width: 85%;
+        max-width: 1180px;
+        .table-inner {
+            display: flex;
+        }
+        &.dynamic {
+            .column {
+                background-color: white;
+                box-shadow: $shadow;
+                padding: 24px 24px 64px;
+                z-index: 1;
+                width: 33%;
+                height: 100%;
+                .column-inner {
+                    .heading {
+                        h3 {
+                            @include subHeadPoppins;
+                            color: $ink;
+                            margin: 0;
+                        }
+                    }
+                    .content {
+                        color: $ink;
+                        @include copy;
+                        p {
+
+                        }
+                        ul {
+                            list-style-type: none;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            margin: 10px 0 0;
+                            padding: 0 0 0 20px;
+                            li {
+                                display: flex;
+                                grid-gap: 20px;
+                                align-items: center;
+                                justify-content: flex-start;
+                                &:before {
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    background-color: $periwinkle;
+                                    box-shadow: $smallShadow;
+                                    content: '';
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.middle {
+                    margin: -24px -24px 0;
+                    z-index: -1;
+                    background-color: $pink;
+                    padding: 36px 48px 64px;
+                    .column-inner {
+                        .heading {
+                            h3 {
+                                color: white;
+                            }
+                        }
+                        .content {
+                            color: white;
+                            p {
+
+                            }
+                            ul {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

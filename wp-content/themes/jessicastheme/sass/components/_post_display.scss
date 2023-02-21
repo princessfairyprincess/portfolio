@@ -1,0 +1,280 @@
+/**
+* Post Display
+*/
+
+.post-display {
+    .section-heading, .row-heading {
+        h2 {
+            &.regular {
+                @include sectHeadRoboto;
+                text-align: left;
+                color: $ink;
+                
+                span {
+                    @include spanPoppins;
+                }
+            }
+
+            &.pink {
+                span {
+                    color: $pink;
+                }
+            }
+
+            &.blue {
+                span {
+                    color: $periwinkle;
+                }
+            }
+
+            &.aqua {
+                span {
+                    color: $aqua;
+                }
+            }
+
+            &.bolder {
+                @include sectHeadPoppins;
+                text-align: center;
+                color: $ink;
+                margin-bottom: 24px;
+            }
+        }
+        &.alt {
+            h2 {
+                text-align: right;
+            }
+        }
+    }
+
+    .slider, .row {
+        padding: 64px 0 0;
+        margin: 0 auto;
+        width: 75%;
+        max-width: 1000px;
+        position: relative;
+        .slider-inner, .row-inner {
+            width: 100%;
+            .slider-contents, .row-contents {
+                .slide, .row-item {
+                    padding: 0 75px 75px;
+                    .slide-inner, .row-item-inner {
+                        min-height: 440px;
+                        display: block;
+                        width: 100%;
+                        position: relative;
+                        .link-outer, .content-holder {
+                            padding: 40px 40px 12px;
+
+                            &.pink {
+                                background-image: $postDisplayPink;
+                                &.alt {
+                                    background-image: $postDisplayPinkAlt;
+                                }
+                            }
+
+                            &.blue {
+                                background-image: $postDisplayBlue;
+                                &.alt {
+                                    background-image: $postDisplayBlueAlt;
+                                }
+                            }
+
+                            &.aqua {
+                                background-image: $postDisplayAqua;
+                                &.alt {
+                                    background-image: $postDisplayAqua;
+                                }
+                            }
+
+                            a, .content {
+                                display: block;
+                                transition: ease;
+                                .image {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    background-size: cover;
+                                    background-position: top;
+                                    background-repeat: no-repeat;
+                                    transition: $ease;
+                                    min-height: 420px;
+                                    filter: drop-shadow($shadow);
+                                    &:before {
+                                        opacity: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: block;
+                                        position: absolute;
+                                        content: "";
+                                        background-color: $glass;
+                                        transition: $ease;
+                                    }
+                                }
+    
+                                &:hover {
+                                    .image {
+                                        transform: scale(1.025);
+                                        &:before {
+                                            opacity: 1;
+                                    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .note {
+                        @include noteRight;
+
+                        &.alt {
+                            @include noteLeft;
+                        }
+
+                        .note-inner {
+                            position: fixed;
+                            width: 120px;
+                            height: 170px;
+                            .arrow {
+                                max-height: 80px;
+                                img {
+                                    max-height: 80px;
+                                }
+                            }
+                            .note-text {
+                                text-align: center;
+                                span {
+                                    @include caption;
+                                    color: $ink;
+                                    text-align: center;
+                                }
+                            
+                            }
+                        }
+
+                        
+                    }
+                }
+
+                .slick-arrow {
+                    width: 40px;
+                    height: 40px;
+                    background-color: $periwinkle;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 40%;
+                    box-shadow: $smallShadow;
+                    transition: $ease;
+                    padding: 0;
+                    cursor: pointer;
+                    z-index: 2;
+
+                    &:hover {
+                        background-color: $paleAqua;
+                    }
+
+                    &::before {
+                        opacity: 1;
+                        content: ' ';
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin: auto;
+                    }
+
+                    &.slick-next {
+                        right: 50px;
+                        &::before {
+                            background-image: url('/wp-content/themes/jessicastheme/img/svg/carbon_chevron-right.svg');
+                        }
+                    }
+
+                    &.slick-prev {
+                        left: 50px;
+                        &::before {
+                            background-image: url('/wp-content/themes/jessicastheme/img/svg/carbon_chevron-left.svg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rows-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 32px;
+
+        .row-container {
+            width: 100%;
+
+            .row {
+                padding: 32px 0 0;
+            }
+
+            &.swap {
+                .section-heading, .row-heading {
+                    h2 {
+                        text-align: right !important;
+                        
+                    }
+
+                    &.alt {
+                        h2 {
+                            text-align: left !important;
+                        }
+                    }
+                }
+                .row {
+                    .row-inner {
+                        .row-contents {
+                            .row-item {
+                                .row-item-inner {
+                                    .content-holder {
+        
+                                        &.pink {
+                                            background-image: $postDisplayPinkAlt !important;
+                                            &.alt {
+                                                background-image: $postDisplayPink !important;
+                                            }
+                                        }
+                            
+                                        &.blue {
+                                            background-image: $postDisplayBlueAlt !important;
+                                            &.alt {
+                                                background-image: $postDisplayBlue !important;
+                                            }
+                                        }
+                            
+                                        &.aqua {
+                                            background-image: $postDisplayAquaAlt !important;
+                                            &.alt {
+                                                background-image: $postDisplayAqua !important;
+                                            }
+                                        }    
+                                        
+                                    }
+                            
+                                    
+                                }
+                                .note {
+                                    @include noteLeft;
+                        
+                                        &.alt {
+                                            @include noteRight;
+                                        }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,19 @@
+/**
+* Footer
+*/
+
+footer {
+    background-color: $periwinkle;
+    .site-info {
+        padding: 90px 0;
+        .footer-inner {
+            text-align: center;
+            p, a {
+                font-size: 1.25rem;
+                color: white;
+                font-family: $roboto;
+                line-height: 2.5;
+            }
+        }
+    }
+}

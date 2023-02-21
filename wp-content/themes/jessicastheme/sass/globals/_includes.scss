@@ -1,0 +1,226 @@
+/**
+* Includes
+*/
+
+
+/**
+* Typography
+*/
+
+html {
+    font-size: 16px;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+$roboto: 'Roboto Mono', monospace;
+$poppins: 'Poppins', sans-serif;
+
+@mixin headerRoboto{
+    font-family: $roboto;
+    font-size: 1.45rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@mixin headerPoppins {
+    font-family: $poppins;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+@mixin sectHeadRoboto {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 1.675rem;
+}
+
+@mixin spanPoppins {
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 1.825rem;
+}
+
+@mixin sectHeadPoppins {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 2.275rem;
+}
+
+@mixin caption {
+    font-family: $roboto;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+@mixin copy {
+    font-family: $roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin subHeadPoppins {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 1.825rem;
+}
+
+/**
+*Layout
+*/
+
+.content-width {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+}
+
+.inner {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.menu-padding {
+    padding-top: calc(30px + 30px + 36px);
+}
+
+#page {
+    position: relative;
+}
+
+.background-motif {
+    position: absolute;
+    z-index: -999;
+    top: 50%;
+    &.left {
+        left: -70px;
+    }
+    &.slider-motif {
+        right: 200px;
+        top: 0;
+    }
+
+    &.right {
+        right: -70px;
+        top: 0;
+    }
+
+    &.top {
+        top: -150% !important;
+    }
+}
+
+section {
+    padding-bottom: 80px;
+}
+
+$mobile: '';
+
+/**
+* Palette
+*/
+
+$ink: #474A66;
+$periwinkle: #779DD8;
+$periTrans: rgba(119, 157, 216, 0.259);
+$mist: #DEE8F5;
+$paleBlue: #C1D8ED;
+$aqua: #8DDBE0;
+$aquaTrans: rgba(141, 219, 224, 0.259);
+$pink: #D485B9;
+$pinkTrans: rgba(212, 133, 185, 0.259);
+$olive: #69A1AC;
+$paleAqua: #D4FCFF;
+$clear: rgba(255, 255, 255, 0);
+$glass: rgba(255, 255, 255, 0.125);
+
+/**
+* Gradients
+**/
+
+$postDisplayPink: linear-gradient(90deg, $clear 0%, $clear 12.51%, $pinkTrans 12.73%, $pinkTrans 100%);
+$postDisplayPinkAlt: linear-gradient(270deg, $clear 0%, $clear 12.51%, $pinkTrans 12.73%, $pinkTrans 100%);
+$postDisplayBlue: linear-gradient(90deg, $clear 0%, $clear 12.51%, $periTrans 12.73%, $periTrans 100%);
+$postDisplayBlueAlt: linear-gradient(270deg, $clear 0%, $clear 12.51%, $periTrans 12.73%, $periTrans 100%);
+$postDisplayAqua: linear-gradient(90deg, $clear 0%, $clear 12.51%, $aquaTrans 12.73%, $aquaTrans 100%);
+$postDisplayAquaAlt: linear-gradient(270deg, $clear 0%, $clear 12.51%, $aquaTrans 12.73%, $aquaTrans 100%);
+
+
+/**
+* Shadows
+*/
+
+$shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+$smallShadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+/**
+* Transitions
+*/
+
+$ease: all ease 0.5s;
+$fade: opacity ease 0.5s;
+
+/**
+* Animations
+*/
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/**
+* Misc
+*/
+
+@mixin noteLeft {
+    position: absolute;
+    width: 120px;
+    height: 170px; 
+    left: 0;
+    right: unset;
+    transform: rotate(12deg);
+    transform-origin: bottom right;
+    top: 150px;
+    bottom: unset;
+}
+
+@mixin noteRight {
+    position: absolute;
+    right: 75px;
+    left: unset;
+    transform: rotate(-12deg);
+    transform-origin: top left;
+    bottom: -50px;
+    top: unset;
+    width: 120px;
+    height: 170px; 
+}
