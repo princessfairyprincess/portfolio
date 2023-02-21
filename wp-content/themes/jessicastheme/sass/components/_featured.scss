@@ -2,9 +2,9 @@
 * Hero 
 */
 
-.hero {
+.hero, .feat {
     position: relative;
-    .hero-inner {
+    .hero-inner, .feat-inner {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,6 +27,10 @@
             justify-content: space-around;
             position: absolute;
             z-index: -1;
+
+            &.no-img {
+                top: -100px;
+            }
 
             .motif-left {
                 display: flex;
@@ -67,6 +71,13 @@
                     width: 242px;
                     height: 242px;
                 }
+                .bubble-large {
+                    border-radius: 100%;
+                    display: block;
+                    background-color: $aqua;
+                    width: 195px;
+                    height: 195px;
+                }
             }
         }
 
@@ -76,9 +87,23 @@
             padding: 0 28px;
             min-width: 30%;
             text-align: center;
+
+            &.white {
+                background-color: white;
+                padding: 36px 48px; 
+                box-shadow: $shadow;
+                width: 50%;
+                max-width: 750px;
+            }
+
             .text-inner {
                 h2 {
                     @include headerRoboto;
+                    color: black;
+                }
+
+                p {
+                    @include copy;
                     color: black;
                 }
             }

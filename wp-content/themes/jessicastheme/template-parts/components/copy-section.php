@@ -5,7 +5,7 @@
  **/
 
  $section_title = get_field('section_title');
- $text = get_field('copy');
+ $text = get_field('text_area');
  $table = get_field('table');
  $settings = $table['table_settings'];
  $table_enable = $settings['enable'];
@@ -56,7 +56,7 @@
                     <div class="column <?php echo $middle; ?>">
                         <div class="column-inner">
                             <div class="heading">
-                                <?php echo $col_heading; ?>
+                                <h3><?php echo $col_heading; ?></h3>
                             </div>
                             <div class="content">
                                 <?php echo $content; ?>
@@ -71,5 +71,5 @@
         </div>
         <?php
     }
-    ?>
+    ?> 
  </section>
