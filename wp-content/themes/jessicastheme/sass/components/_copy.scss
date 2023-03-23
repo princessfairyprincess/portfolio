@@ -19,6 +19,11 @@
         display: block;
         margin: 0 auto;
 
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            max-width: 800px;
+        }
+
         p {
             color: $ink;
             @include copy;
@@ -36,6 +41,9 @@
         max-width: 1180px;
         .table-inner {
             display: flex;
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+            }
         }
         &.dynamic {
             .column {
@@ -45,6 +53,9 @@
                 z-index: 1;
                 width: 33%;
                 height: 100%;
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                }
                 .column-inner {
                     .heading {
                         h3 {
