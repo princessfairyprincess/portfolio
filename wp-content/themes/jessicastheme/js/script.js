@@ -82,7 +82,17 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 7000,
         prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>'
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1.15,
+                    fade: false
+                }
+            }
+        ]
     });
 
 

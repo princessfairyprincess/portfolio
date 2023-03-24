@@ -53,18 +53,43 @@
         width: 75%;
         max-width: 1000px;
         position: relative;
+
+        @media screen and (max-width: $mobile) {
+            width: 100vw;
+            padding: 32px 0 0;
+            margin: 0 -20px 60px;
+        }
         .slider-inner, .row-inner {
             width: 100%;
             .slider-contents, .row-contents {
+                .slick-list {
+                    @media screen and (max-width: $mobile) {
+                        overflow: visible;
+                    }
+                }
+
                 .slide, .row-item {
                     padding: 0 75px 75px;
+
+                    @media screen and (max-width: $mobile) {
+                        padding: 0;
+                        position: relative;
+                    }
                     .slide-inner, .row-item-inner {
                         min-height: 440px;
                         display: block;
                         width: 100%;
                         position: relative;
+
+                        @media screen and (max-width: $mobile) {
+                            min-height: 220px;
+                        }
                         .link-outer, .content-holder {
                             padding: 40px 40px 12px;
+
+                            @media screen and (max-width: $mobile) {
+                                padding: 20px 20px 12px;
+                            }
 
                             &.pink {
                                 background-image: $postDisplayPink;
@@ -110,6 +135,11 @@
                                         background-color: $glass;
                                         transition: $ease;
                                     }
+
+                                    @media screen and (max-width: $mobile) {
+                                        min-height: unset;
+                                        padding-top: 62.5%;
+                                    }
                                 }
     
                                 &:hover {
@@ -137,8 +167,14 @@
                             height: 170px;
                             .arrow {
                                 max-height: 80px;
+                                @media screen and (max-width: $mobile) {
+                                    max-height: 60px;
+                                }
                                 img {
                                     max-height: 80px;
+                                    @media screen and (max-width: $mobile) {
+                                        max-height: 60px;
+                                    }
                                 }
                             }
                             .note-text {
@@ -214,18 +250,27 @@
 
             .row {
                 padding: 32px 0 0;
+                @media screen and (max-width: $mobile) {
+                    padding: 8px 0 0;
+                }
             }
 
             &.swap {
                 .section-heading, .row-heading {
                     h2 {
                         text-align: right !important;
+                        @media screen and (max-width: $mobile) {
+                            text-align: center !important;
+                        }
                         
                     }
 
                     &.alt {
                         h2 {
                             text-align: left !important;
+                            @media screen and (max-width: $mobile) {
+                                text-align: center !important;
+                            }
                         }
                     }
                 }

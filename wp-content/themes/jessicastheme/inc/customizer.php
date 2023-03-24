@@ -222,6 +222,20 @@ add_action( 'customize_preview_init', 'jessicastheme_customize_preview_js' );
 			'priority' => "10"
 		)
 	);
+
+	$wp_customize->add_setting("disclaimer", array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options'
+	)
+	);
+
+	$wp_customize->add_control("disclaimer", array(
+			'label' => _x("Disclaimer", 'text-domain'),
+			'section' => 'footer_settings',
+			'type' => 'textarea',
+			'priority' => "10"
+		)
+	);
   }
 
   add_action('customize_register', 'jm_footer_settings');
@@ -235,5 +249,8 @@ add_action( 'customize_preview_init', 'jessicastheme_customize_preview_js' );
 		echo '<p>'.get_theme_mod("footer_text_2").'<br>';
 	}
 	echo "<div class='copyright'><p>© Jessica Michaels " . date('Y') . '</div>';
+	if (strlen(get_theme_mod("disclaimer")) > 0) {
+		echo '<p class="smaller">'.get_theme_mod("disclaimer") . '</p>';
+	}
 	echo "</p></div>";
   }

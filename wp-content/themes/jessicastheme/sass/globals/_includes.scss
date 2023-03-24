@@ -2,81 +2,11 @@
 * Includes
 */
 
-
-/**
-* Typography
-*/
-
-html {
-    font-size: 16px;
-    min-height: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    overflow: hidden;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
-$roboto: 'Roboto Mono', monospace;
-$poppins: 'Poppins', sans-serif;
-
-@mixin headerRoboto{
-    font-family: $roboto;
-    font-size: 1.45rem;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-@mixin headerPoppins {
-    font-family: $poppins;
-    font-size: 3.2rem;
-    font-weight: 600;
-}
-
-@mixin sectHeadRoboto {
-    font-family: $roboto;
-    font-weight: 400;
-    font-size: 1.675rem;
-}
-
-@mixin spanPoppins {
-    font-family: $poppins;
-    font-weight: 700;
-    font-size: 1.825rem;
-}
-
-@mixin sectHeadPoppins {
-    font-family: $poppins;
-    font-weight: 600;
-    font-size: 2.275rem;
-}
-
-@mixin caption {
-    font-family: $roboto;
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-
-@mixin copy {
-    font-family: $roboto;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-@mixin subHeadPoppins {
-    font-family: $poppins;
-    font-weight: 600;
-    font-size: 1.825rem;
-}
-
 /**
 *Layout
 */
+
+$mobile: 64rem;
 
 .content-width {
     width: 100%;
@@ -89,6 +19,11 @@ $poppins: 'Poppins', sans-serif;
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: $mobile) {
+        max-width: 92%;
+        width: unset;
+    }
 }
 
 .no-scroll {
@@ -127,9 +62,117 @@ $poppins: 'Poppins', sans-serif;
 
 section {
     padding-bottom: 80px;
+
+    @media screen and (max-width: $mobile) {
+        padding-bottom: 40px;
+    }
 }
 
-$mobile: '';
+
+/**
+* Typography
+*/
+
+html {
+    font-size: 16px;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+$roboto: 'Roboto Mono', monospace;
+$poppins: 'Poppins', sans-serif;
+
+@mixin headerRoboto{
+    font-family: $roboto;
+    font-size: 1.45rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.125rem;
+    }
+}
+
+
+@mixin headerPoppins {
+    font-family: $poppins;
+    font-size: 3.2rem;
+    font-weight: 600;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin sectHeadRoboto {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 1.675rem;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.25rem;
+    }
+}
+
+@mixin spanPoppins {
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 1.825rem;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.125rem;
+    }
+}
+
+@mixin sectHeadPoppins {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 2.275rem;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.45rem;
+    }
+}
+
+@mixin caption {
+    font-family: $roboto;
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 0.625rem;
+    }
+}
+
+@mixin copy {
+    font-family: $roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 0.875rem;
+    }
+}
+
+@mixin subHeadPoppins {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 1.825rem;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.125rem;
+    }
+}
+
 
 /**
 * Palette
@@ -211,6 +254,13 @@ $fade: opacity ease 0.5s;
     transform-origin: bottom right;
     top: 150px;
     bottom: unset;
+    @media screen and (max-width: $mobile) {
+        left: 5%;
+        top: unset;
+        bottom: -60%;
+        transform: rotate(-40deg);
+        transform-origin: left;
+    }
 }
 
 @mixin noteRight {
@@ -223,4 +273,9 @@ $fade: opacity ease 0.5s;
     top: unset;
     width: 120px;
     height: 170px; 
+    @media screen and (max-width: $mobile) {
+        right: 5%;
+        top: unset;
+        bottom: -60%;
+    }
 }

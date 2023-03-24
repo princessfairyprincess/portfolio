@@ -19,6 +19,11 @@
         display: block;
         margin: 0 auto;
 
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            max-width: 800px;
+        }
+
         p {
             color: $ink;
             @include copy;
@@ -36,6 +41,10 @@
         max-width: 1180px;
         .table-inner {
             display: flex;
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         &.dynamic {
             .column {
@@ -45,6 +54,9 @@
                 z-index: 1;
                 width: 33%;
                 height: 100%;
+                @media screen and (max-width: $mobile) {
+                    width: 90%;
+                }
                 .column-inner {
                     .heading {
                         h3 {
@@ -87,7 +99,12 @@
                     margin: -24px -24px 0;
                     z-index: -1;
                     background-color: $pink;
-                    padding: 36px 48px 64px;
+                    padding: 36px 40px 64px;
+
+                    @media screen and (max-width: $mobile) {
+                        width: 100%;
+                        margin: -24px 0;
+                    }
                     .column-inner {
                         .heading {
                             h3 {

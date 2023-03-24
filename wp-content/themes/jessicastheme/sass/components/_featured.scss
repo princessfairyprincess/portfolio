@@ -13,6 +13,9 @@
         z-index: 1;
         position: relative;
         margin: 40px auto 80px;
+        @media screen and (max-width: $mobile) {
+            grid-gap: 100px;       
+        }
         .title {
             h1 {
                 @include headerPoppins;
@@ -28,8 +31,16 @@
             position: absolute;
             z-index: -1;
 
+            @media screen and (max-width: $mobile) {
+                width: 90%;
+                max-width: unset;
+            }
+
             &.no-img {
                 top: -100px;
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                }
             }
 
             .motif-left {
@@ -48,6 +59,11 @@
                     display: block;
                     margin-bottom: -23px;  
                     z-index: 1;              
+
+                    @media screen and (max-width: $mobile) {
+                        width: 25px;
+                        height: 25px;
+                    }
                 }
 
                 .bubble-large {
@@ -56,6 +72,11 @@
                     background-color: $aqua;
                     width: 195px;
                     height: 195px;
+
+                    @media screen and (max-width: $mobile) {
+                        width: 125px;
+                        height: 125px;
+                    }
                 }
             }
             .motif-right {
@@ -70,6 +91,11 @@
                     background-size: cover;
                     width: 242px;
                     height: 242px;
+
+                    @media screen and (max-width: $mobile) {
+                        width: 152px;
+                        height: 152px;
+                    }
                 }
                 .bubble-large {
                     border-radius: 100%;
@@ -77,6 +103,11 @@
                     background-color: $aqua;
                     width: 195px;
                     height: 195px;
+
+                    @media screen and (max-width: $mobile) {
+                        width: 125px;
+                        height: 125px;
+                    }
                 }
             }
         }
@@ -94,6 +125,11 @@
                 box-shadow: $shadow;
                 width: 50%;
                 max-width: 750px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 90%;
+                    padding: 24px;
+                }
             }
 
             .text-inner {
