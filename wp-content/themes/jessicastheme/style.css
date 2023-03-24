@@ -1086,7 +1086,11 @@ footer {
       /* line 39, sass/components/_featured.scss */
       .hero .hero-inner .motifs.no-img, .hero .feat-inner .motifs.no-img, .feat .hero-inner .motifs.no-img, .feat .feat-inner .motifs.no-img {
         top: -100px; }
-      /* line 43, sass/components/_featured.scss */
+        @media screen and (max-width: 64rem) {
+          /* line 39, sass/components/_featured.scss */
+          .hero .hero-inner .motifs.no-img, .hero .feat-inner .motifs.no-img, .feat .hero-inner .motifs.no-img, .feat .feat-inner .motifs.no-img {
+            width: 100%; } }
+      /* line 46, sass/components/_featured.scss */
       .hero .hero-inner .motifs .motif-left, .hero .feat-inner .motifs .motif-left, .feat .hero-inner .motifs .motif-left, .feat .feat-inner .motifs .motif-left {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1103,7 +1107,7 @@ footer {
                 align-items: flex-start;
         position: relative;
         margin-bottom: -33px; }
-        /* line 51, sass/components/_featured.scss */
+        /* line 54, sass/components/_featured.scss */
         .hero .hero-inner .motifs .motif-left .bubble-small, .hero .feat-inner .motifs .motif-left .bubble-small, .feat .hero-inner .motifs .motif-left .bubble-small, .feat .feat-inner .motifs .motif-left .bubble-small {
           border-radius: 100%;
           background-color: rgba(212, 133, 185, 0.259);
@@ -1113,11 +1117,11 @@ footer {
           margin-bottom: -23px;
           z-index: 1; }
           @media screen and (max-width: 64rem) {
-            /* line 51, sass/components/_featured.scss */
+            /* line 54, sass/components/_featured.scss */
             .hero .hero-inner .motifs .motif-left .bubble-small, .hero .feat-inner .motifs .motif-left .bubble-small, .feat .hero-inner .motifs .motif-left .bubble-small, .feat .feat-inner .motifs .motif-left .bubble-small {
               width: 25px;
               height: 25px; } }
-        /* line 66, sass/components/_featured.scss */
+        /* line 69, sass/components/_featured.scss */
         .hero .hero-inner .motifs .motif-left .bubble-large, .hero .feat-inner .motifs .motif-left .bubble-large, .feat .hero-inner .motifs .motif-left .bubble-large, .feat .feat-inner .motifs .motif-left .bubble-large {
           border-radius: 100%;
           display: block;
@@ -1125,11 +1129,11 @@ footer {
           width: 195px;
           height: 195px; }
           @media screen and (max-width: 64rem) {
-            /* line 66, sass/components/_featured.scss */
+            /* line 69, sass/components/_featured.scss */
             .hero .hero-inner .motifs .motif-left .bubble-large, .hero .feat-inner .motifs .motif-left .bubble-large, .feat .hero-inner .motifs .motif-left .bubble-large, .feat .feat-inner .motifs .motif-left .bubble-large {
               width: 125px;
               height: 125px; } }
-      /* line 79, sass/components/_featured.scss */
+      /* line 82, sass/components/_featured.scss */
       .hero .hero-inner .motifs .motif-right, .hero .feat-inner .motifs .motif-right, .feat .hero-inner .motifs .motif-right, .feat .feat-inner .motifs .motif-right {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1141,7 +1145,7 @@ footer {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end; }
-        /* line 83, sass/components/_featured.scss */
+        /* line 86, sass/components/_featured.scss */
         .hero .hero-inner .motifs .motif-right .bubble-photo, .hero .feat-inner .motifs .motif-right .bubble-photo, .feat .hero-inner .motifs .motif-right .bubble-photo, .feat .feat-inner .motifs .motif-right .bubble-photo {
           border-radius: 100%;
           display: block;
@@ -1151,11 +1155,11 @@ footer {
           width: 242px;
           height: 242px; }
           @media screen and (max-width: 64rem) {
-            /* line 83, sass/components/_featured.scss */
+            /* line 86, sass/components/_featured.scss */
             .hero .hero-inner .motifs .motif-right .bubble-photo, .hero .feat-inner .motifs .motif-right .bubble-photo, .feat .hero-inner .motifs .motif-right .bubble-photo, .feat .feat-inner .motifs .motif-right .bubble-photo {
               width: 152px;
               height: 152px; } }
-        /* line 97, sass/components/_featured.scss */
+        /* line 100, sass/components/_featured.scss */
         .hero .hero-inner .motifs .motif-right .bubble-large, .hero .feat-inner .motifs .motif-right .bubble-large, .feat .hero-inner .motifs .motif-right .bubble-large, .feat .feat-inner .motifs .motif-right .bubble-large {
           border-radius: 100%;
           display: block;
@@ -1163,18 +1167,18 @@ footer {
           width: 195px;
           height: 195px; }
           @media screen and (max-width: 64rem) {
-            /* line 97, sass/components/_featured.scss */
+            /* line 100, sass/components/_featured.scss */
             .hero .hero-inner .motifs .motif-right .bubble-large, .hero .feat-inner .motifs .motif-right .bubble-large, .feat .hero-inner .motifs .motif-right .bubble-large, .feat .feat-inner .motifs .motif-right .bubble-large {
               width: 125px;
               height: 125px; } }
-    /* line 112, sass/components/_featured.scss */
+    /* line 115, sass/components/_featured.scss */
     .hero .hero-inner .text, .hero .feat-inner .text, .feat .hero-inner .text, .feat .feat-inner .text {
       z-index: 1;
       background-color: #DEE8F5;
       padding: 0 28px;
       min-width: 30%;
       text-align: center; }
-      /* line 119, sass/components/_featured.scss */
+      /* line 122, sass/components/_featured.scss */
       .hero .hero-inner .text.white, .hero .feat-inner .text.white, .feat .hero-inner .text.white, .feat .feat-inner .text.white {
         background-color: white;
         padding: 36px 48px;
@@ -1182,7 +1186,12 @@ footer {
                 box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
         width: 50%;
         max-width: 750px; }
-      /* line 128, sass/components/_featured.scss */
+        @media screen and (max-width: 64rem) {
+          /* line 122, sass/components/_featured.scss */
+          .hero .hero-inner .text.white, .hero .feat-inner .text.white, .feat .hero-inner .text.white, .feat .feat-inner .text.white {
+            width: 90%;
+            padding: 24px; } }
+      /* line 136, sass/components/_featured.scss */
       .hero .hero-inner .text .text-inner h2, .hero .feat-inner .text .text-inner h2, .feat .hero-inner .text .text-inner h2, .feat .feat-inner .text .text-inner h2 {
         font-family: "Roboto Mono", monospace;
         font-size: 1.45rem;
@@ -1190,10 +1199,10 @@ footer {
         text-decoration: none;
         color: black; }
         @media screen and (max-width: 64rem) {
-          /* line 128, sass/components/_featured.scss */
+          /* line 136, sass/components/_featured.scss */
           .hero .hero-inner .text .text-inner h2, .hero .feat-inner .text .text-inner h2, .feat .hero-inner .text .text-inner h2, .feat .feat-inner .text .text-inner h2 {
             font-size: 1.125rem; } }
-      /* line 133, sass/components/_featured.scss */
+      /* line 141, sass/components/_featured.scss */
       .hero .hero-inner .text .text-inner p, .hero .feat-inner .text .text-inner p, .feat .hero-inner .text .text-inner p, .feat .feat-inner .text .text-inner p {
         font-family: "Roboto Mono", monospace;
         font-size: 1rem;
@@ -1201,10 +1210,10 @@ footer {
         line-height: 1.5;
         color: black; }
         @media screen and (max-width: 64rem) {
-          /* line 133, sass/components/_featured.scss */
+          /* line 141, sass/components/_featured.scss */
           .hero .hero-inner .text .text-inner p, .hero .feat-inner .text .text-inner p, .feat .hero-inner .text .text-inner p, .feat .feat-inner .text .text-inner p {
             font-size: 0.875rem; } }
-  /* line 140, sass/components/_featured.scss */
+  /* line 148, sass/components/_featured.scss */
   .hero .arrow, .feat .arrow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1219,7 +1228,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 145, sass/components/_featured.scss */
+    /* line 153, sass/components/_featured.scss */
     .hero .arrow .bounce, .feat .arrow .bounce {
       -webkit-animation-name: bounce;
               animation-name: bounce;
@@ -1662,8 +1671,11 @@ footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
-  /* line 49, sass/components/_copy.scss */
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+  /* line 50, sass/components/_copy.scss */
   .copy-section .table-container.dynamic .column {
     background-color: white;
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
@@ -1673,10 +1685,10 @@ footer {
     width: 33%;
     height: 100%; }
     @media screen and (max-width: 64rem) {
-      /* line 49, sass/components/_copy.scss */
+      /* line 50, sass/components/_copy.scss */
       .copy-section .table-container.dynamic .column {
-        width: 100%; } }
-    /* line 61, sass/components/_copy.scss */
+        width: 90%; } }
+    /* line 62, sass/components/_copy.scss */
     .copy-section .table-container.dynamic .column .column-inner .heading h3 {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
@@ -1684,10 +1696,10 @@ footer {
       color: #474A66;
       margin: 0; }
       @media screen and (max-width: 64rem) {
-        /* line 61, sass/components/_copy.scss */
+        /* line 62, sass/components/_copy.scss */
         .copy-section .table-container.dynamic .column .column-inner .heading h3 {
           font-size: 1.125rem; } }
-    /* line 67, sass/components/_copy.scss */
+    /* line 68, sass/components/_copy.scss */
     .copy-section .table-container.dynamic .column .column-inner .content {
       color: #474A66;
       font-family: "Roboto Mono", monospace;
@@ -1695,17 +1707,17 @@ footer {
       font-weight: 400;
       line-height: 1.5; }
       @media screen and (max-width: 64rem) {
-        /* line 67, sass/components/_copy.scss */
+        /* line 68, sass/components/_copy.scss */
         .copy-section .table-container.dynamic .column .column-inner .content {
           font-size: 0.875rem; } }
-      /* line 73, sass/components/_copy.scss */
+      /* line 74, sass/components/_copy.scss */
       .copy-section .table-container.dynamic .column .column-inner .content ul {
         list-style-type: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 10px 0 0;
         padding: 0 0 0 20px; }
-        /* line 79, sass/components/_copy.scss */
+        /* line 80, sass/components/_copy.scss */
         .copy-section .table-container.dynamic .column .column-inner .content ul li {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1717,7 +1729,7 @@ footer {
           -webkit-box-pack: start;
               -ms-flex-pack: start;
                   justify-content: flex-start; }
-          /* line 84, sass/components/_copy.scss */
+          /* line 85, sass/components/_copy.scss */
           .copy-section .table-container.dynamic .column .column-inner .content ul li:before {
             width: 8px;
             height: 8px;
@@ -1727,16 +1739,21 @@ footer {
                     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             content: '';
             display: block; }
-    /* line 97, sass/components/_copy.scss */
+    /* line 98, sass/components/_copy.scss */
     .copy-section .table-container.dynamic .column.middle {
       margin: -24px -24px 0;
       z-index: -1;
       background-color: #D485B9;
-      padding: 36px 48px 64px; }
-      /* line 104, sass/components/_copy.scss */
+      padding: 36px 40px 64px; }
+      @media screen and (max-width: 64rem) {
+        /* line 98, sass/components/_copy.scss */
+        .copy-section .table-container.dynamic .column.middle {
+          width: 100%;
+          margin: -24px 0; } }
+      /* line 110, sass/components/_copy.scss */
       .copy-section .table-container.dynamic .column.middle .column-inner .heading h3 {
         color: white; }
-      /* line 108, sass/components/_copy.scss */
+      /* line 114, sass/components/_copy.scss */
       .copy-section .table-container.dynamic .column.middle .column-inner .content {
         color: white; }
 

@@ -38,6 +38,9 @@
 
             &.no-img {
                 top: -100px;
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                }
             }
 
             .motif-left {
@@ -122,6 +125,11 @@
                 box-shadow: $shadow;
                 width: 50%;
                 max-width: 750px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 90%;
+                    padding: 24px;
+                }
             }
 
             .text-inner {
